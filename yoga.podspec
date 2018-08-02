@@ -1,9 +1,4 @@
 
-
-
-source = 'https://github.com/wowbby/yoya.git'
-
-
 Pod::Spec.new do |spec|
   spec.name = 'yoga'
   spec.version = "0.1.0"
@@ -15,7 +10,7 @@ Pod::Spec.new do |spec|
   spec.description = 'Yoga is a cross-platform layout engine enabling maximum collaboration within your team by implementing an API many designers are familiar with, and opening it up to developers across different platforms.'
 
   spec.authors = 'Facebook'
-  spec.source = source
+  spec.source = { :git => 'https://github.com/wowbby/yoya.git', :tag => s.version.to_s }
 
   spec.module_name = 'yoga'
   spec.requires_arc = false
